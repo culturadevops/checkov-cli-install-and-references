@@ -9,7 +9,7 @@ pipeline {
         stage ('checkov') {
             steps {
                         script {
-                           sh  "checkov -d ."
+                           sh  "checkov -d ./desplieguejenkins/"
                     }
                 
             }
