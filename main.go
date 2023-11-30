@@ -1,5 +1,6 @@
 package main
 
+//checkov --disable-inline-skips
 import (
 	"fmt"
 	"log"
