@@ -7,6 +7,15 @@ pipeline {
     stages {
         stage ('checkov') {
             steps {
+                script {
+                           sh  "./checkovDisableInlineSkips"
+                }
+                
+            }
+            
+        }
+        stage ('checkov') {
+            steps {
                         script {
                            sh  "checkov -d ."
                     }
