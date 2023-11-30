@@ -2,6 +2,7 @@ package main
 
 //checkov --disable-inline-skips
 import (
+	"flag"
 	"fmt"
 	"log"
 	"os"
@@ -102,7 +103,13 @@ func searchPatternInDirectory(dirPath string, pattern string, allowedFormats, al
 }
 
 func main() {
-	directoryPath := "."                          // Cambiar por la ruta del directorio que deseas buscar
+	var (
+		nombre string
+	)
+
+	// Definir las variables que deseas capturar como argumentos
+	flag.StringVar(&nombre, "dir", "", "direccion a analizar")
+	directoryPath := nombre                       // Cambiar por la ruta del directorio que deseas buscar
 	pattern := "#checkov:skip=.*"                 // Cambiar por el patrón que estás buscando
 	allowedFileFormats := []string{".yml", ".tf"} // Cambiar o agregar extensiones permitidas
 	allowedFileName := []string{"Dockerfile"}     // Cambiar o agregar extensiones permitidas

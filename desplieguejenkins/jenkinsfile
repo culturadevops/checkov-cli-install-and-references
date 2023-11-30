@@ -8,7 +8,7 @@ pipeline {
         stage ('checkov disable skip') {
             steps {
                 script {
-                           sh  "./desplieguejenkins/checkovDisableInlineSkips"
+                           sh  "./desplieguejenkins/checkovDisableInlineSkips -nombre=./desplieguejenkins/"
                 }
                 
             }
