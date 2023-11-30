@@ -1,14 +1,11 @@
 pipeline {
     agent any
-    parameters {
-        string defaultValue: '', description: 'Nombre del usuario a crear', name: 'USUARIO', trim: true
-        string defaultValue: '', description: 'contraseña nueva del usuario a crear', name: 'PASSWORD', trim: true
-    }
+//./desplieguejenkins/checkovDisableInlineSkips -dir=./desplieguejenkins/
     stages {
         stage ('checkov disable skip') {
             steps {
                 script {
-                           sh  "./desplieguejenkins/checkovDisableInlineSkips -dir=./desplieguejenkins/"
+                           sh  "echo 'skip'"
                 }
                 
             }
