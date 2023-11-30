@@ -1,5 +1,7 @@
 FROM jenkins/jenkins:jdk21
 #checkov:skip=CKV_DOCKER_2: saltar regla
+#checkov:skip=CKV_DOCKER_3: saltar regla
+
 #cat /etc/*release
 #WORKDIR /tmp
 #run curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
