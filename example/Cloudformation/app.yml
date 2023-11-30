@@ -1,0 +1,33 @@
+
+Resources:
+  MyDB0:
+    Metadata:
+        checkov:
+          skip:
+            - id: "CKV_AWS_118"
+              comment: "Ensure that RDS instances have Multi-AZ enabled"
+            - id: "CKV_AWS_157"
+              comment: "Ensure that RDS instances have Multi-AZ enabled"
+    Type: 'AWS::RDS::DBInstance'
+    Properties:
+      DBName: 'mydb'
+      DBInstanceClass: 'db.t3.micro'
+      Engine: 'mysql'
+      MasterUsername: 'master'
+      MasterUserPassword: 'password'
+  MyDB1:
+    Metadata:
+        checkov:
+          skip:
+            - id: "CKV_AWS_118"
+              comment: "Ensure that RDS instances have Multi-AZ enabled"
+            - id: "CKV_AWS_157"
+              comment: "Ensure that RDS instances have Multi-AZ enabled"
+    Type: 'AWS::RDS::DBInstance'
+    Properties:
+      DBName: 'mydb'
+      DBInstanceClass: 'db.t3.micro'
+      Engine: 'mysql'
+      MasterUsername: 'master'
+      MasterUserPassword: 'password'
+      StorageEncrypted: false

@@ -1,0 +1,31 @@
+#
+service: usersCrud
+provider: aws
+
+functions:
+  myFunc:
+    name: myFunc
+    tags:
+      RESOURCE: lambda
+      PUBLIC: false
+    iamRoleStatements:
+      - Effect: Allow
+        Action:
+          - "lambda:InvokeFunction"
+        Resource:
+          - "arn:aws:lambda:#{AWS::Region}:#{AWS::AccountId}:function:invokedLambda"
+    handler: Handler.handle
+    timeout: 600
+    memorySize: 320
+
+resources: # CloudFormation template syntax
+  Resources:
+    S3BucketPublicRead:
+      #checkov:skip=CKV_AWS_18:The bucket is a public static content host
+      Type: AWS::S3::Bucket
+      Properties:
+        AccessControl: PublicRead
+        BucketEncryption:
+          ServerSideEncryptionConfiguration:
+            - ServerSideEncryptionByDefault:
+                SSEAlgorithm: AES256
