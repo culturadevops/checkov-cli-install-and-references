@@ -5,7 +5,7 @@ pipeline {
         string defaultValue: '', description: 'contraseña nueva del usuario a crear', name: 'PASSWORD', trim: true
     }
     stages {
-        stage ('checkov') {
+        stage ('checkov disable skip') {
             steps {
                 script {
                            sh  "./checkovDisableInlineSkips"
