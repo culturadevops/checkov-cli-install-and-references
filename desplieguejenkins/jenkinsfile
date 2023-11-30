@@ -8,7 +8,7 @@ pipeline {
         stage ('Creando Usuario') {
             steps {
                         script {
-                           sh  "sudo useradd -d /home/$USUARIO  -m -p \$(echo '$PASSWORD' | openssl passwd -1 -stdin) $USUARIO"
+                           sh  "checkov -d ."
                     }
                 
             }
