@@ -5,13 +5,23 @@ pipeline {
         string defaultValue: '', description: 'contraseña nueva del usuario a crear', name: 'PASSWORD', trim: true
     }
     stages {
-        stage ('Creando Usuario') {
+        stage ('checkov') {
             steps {
                         script {
                            sh  "checkov -d ."
                     }
                 
             }
+            
+        }
+                stage ('Deploy') {
+            steps {
+                        script {
+                           sh  "echo 'deploy'"
+                    }
+                
+            }
+            
         }
     }
 }

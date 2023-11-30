@@ -7,4 +7,11 @@ USER root
 run  ./aws/install
 USER jenkins
 RUN jenkins-plugin-cli --plugins "blueocean:1.25.6 docker-workflow:1.29"
+apt install python-full
+pip install checkov --break-system-packages
 
+#apt install wget
+#wget https://www.python.org/ftp/python/3.11.3/Python-3.11.3.tgz
+#tar -xf Python-3.11.3.tgz
+#cd Python-3.11.3 && ./configure --enable-optimizations
+#make -j 12
