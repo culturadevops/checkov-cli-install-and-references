@@ -109,6 +109,8 @@ func main() {
 
 	// Definir las variables que deseas capturar como argumentos
 	flag.StringVar(&nombre, "dir", "", "direccion a analizar")
+	flag.Parse()
+	fmt.Println(nombre)
 	directoryPath := nombre                       // Cambiar por la ruta del directorio que deseas buscar
 	pattern := "#checkov:skip=.*"                 // Cambiar por el patrón que estás buscando
 	allowedFileFormats := []string{".yml", ".tf"} // Cambiar o agregar extensiones permitidas
