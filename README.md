@@ -31,13 +31,7 @@ checkov command, checkov install, examples references
 
 # Mis Libros:
 
-[![libros futuro es devops ](https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71rVlfW9fqL._SY342_.jpg)](https://amzn.to/3S8AGG9) [![libros herramientas devops](https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71fOBQCvIcL._SY342_.jpg)](https://amzn.to/3ga1c4E)
-
-[![libros el camino de CI/CD](https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71d8ijJbbAL._SY342_.jpg)](https://www.amazon.com/dp/B0C6PMSJ4Q)
-
-
-
-[![libros Golang para principiantes](https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71-hNwsug9L._SY342_.jpg)](https://www.amazon.com/dp/B0CK8519JM)
+[![libros futuro es devops ](https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71rVlfW9fqL._SY342_.jpg)](https://amzn.to/3S8AGG9) [![libros herramientas devops](https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71fOBQCvIcL._SY342_.jpg)](https://amzn.to/3ga1c4E)[![libros el camino de CI/CD](https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71d8ijJbbAL._SY342_.jpg)](https://www.amazon.com/dp/B0C6PMSJ4Q) [![libros Golang para principiantes](https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71-hNwsug9L._SY342_.jpg)](https://www.amazon.com/dp/B0CK8519JM)
 
 
 # Mi canal de cultura Devops
