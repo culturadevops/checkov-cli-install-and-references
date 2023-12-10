@@ -29,7 +29,22 @@ checkov command, checkov install, examples references
 
 
 
-c
+# Mis Libros:
 
-# fix
+[![libros futuro es devops ](https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71rVlfW9fqL._SY522_.jpg)](https://amzn.to/3S8AGG9) [![libros herramientas devops](https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71fOBQCvIcL._SY342_.jpg)](https://amzn.to/3ga1c4E)
+
+[![libros el camino de CI/CD](https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71d8ijJbbAL._SY425_.jpg)](https://www.amazon.com/dp/B0C6PMSJ4Q)
+
+
+
+[![libros Golang para principiantes](https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71-hNwsug9L._SY425_.jpg)](https://www.amazon.com/dp/B0CK8519JM)
+
+
+# Mi canal de cultura Devops
+
+[![canal de youtube sobre devops ](https://github.com/culturadevops/ecs_para_principiantes/blob/master/recursos/culturadevops.png)](https://www.youtube.com/channel/UCfJ67eVA7DkKbbIF5ceJDMA?sub_confirmation=1) 
+
+
+
+# otras cosas fix
 https://github.com/bridgecrewio/checkov/issues/2863
